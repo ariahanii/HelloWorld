@@ -12,7 +12,6 @@ for i in result:
 
 result = list(result)
 
-# 11 is the number of letters in hello world
 for i in range(len(result)):
     while True:
         if word[i] == result[i]:
@@ -20,6 +19,9 @@ for i in range(len(result)):
         for j in letters:
             word[i] = j
             print("".join(word))
-            sleep(0.05)
+            sleep(0.03)
             if word[i] == result[i]:
                 break
+
+#causing the command prompt not to close 
+input('Press ENTER to exit')
